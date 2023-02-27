@@ -17,25 +17,6 @@ function getArrayParams(...arr) {
 }
 getArrayParams();
 
-// function getArrayParams(...arr) {
-//   let max = 0;
-//   let min = arr[0];
-//   let sum = 0;
-  
-//   for (i = 0; i < arr.length; i += 1) {
-//     max = (max < arr[i]) ? (max = arr[i]) : (max = max);
-//   }
-//       for (i = 0; i < arr.length; i += 1) {
-//     min = (min < arr[i]) ? (min = min) : (min = arr[i]);
-//   }
-//      for (i = 0; i < arr.length; i += 1) {
-//     sum += arr[i];
-//   }
-//   let avg = Number((sum / arr.length).toFixed(2));
-
-//   console.log(`final max = ${max}, final min = ${min} average = ${avg}`);
-// }
-
 function summElementsWorker(...arr) {
   const initialValue = 0;
   let sum = arr.reduce((total, amount) => total + amount, initialValue);
